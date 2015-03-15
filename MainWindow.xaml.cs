@@ -70,10 +70,29 @@ namespace OfficeC2RDownloader
 
             ObservableCollection<CheckListItem> Languages = new ObservableCollection<CheckListItem>();
             Languages.Add(new CheckListItem() { Value = "ar-sa", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "cs-cz", IsChecked = false });
             Languages.Add(new CheckListItem() { Value = "de-de", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "el-gr", IsChecked = false });
             Languages.Add(new CheckListItem() { Value = "en-us", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "es-es", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "et-ee", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "fi-fi", IsChecked = false });
             Languages.Add(new CheckListItem() { Value = "fr-fr", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "hi-in", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "hu-hu", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "it-it", IsChecked = false });
             Languages.Add(new CheckListItem() { Value = "ja-jp", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "ko-kr", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "lt-lt", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "lv-lv", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "nb-no", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "pt-br", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "ro-ro", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "ru-ru", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "th-th", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "tr-tr", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "uk-ua", IsChecked = false });
+            Languages.Add(new CheckListItem() { Value = "vi-vn", IsChecked = false });
             Languages.Add(new CheckListItem() { Value = "zh-cn", IsChecked = false });
             langChkLst.ItemsSource = Languages;
         }
