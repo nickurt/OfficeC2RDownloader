@@ -22,6 +22,42 @@ namespace OfficeC2RDownloader
     /// </summary>
     public partial class MainWindow : Window
     {
+        public readonly string[] languages = 
+        {
+            "ar-sa",
+            "cs-cz",
+            "da-dk",
+            "de-de",
+            "el-gr",
+            "en-us",
+            "es-es",
+            "et-ee",
+            "fi-fi",
+            "fr-fr",
+            "he-il",
+            "hi-in",
+            "hu-hu",
+            "it-it",
+            "ja-jp",
+            "ko-kr",
+            "lt-lt",
+            "lv-lv",
+            "nb-no",
+            "nl-nl",
+            "pl-pl",
+            "pt-br",
+            "pt-pt",
+            "ro-ro",
+            "ru-ru",
+            "sv-se",
+            "th-th",
+            "tr-tr",
+            "uk-ua",
+            "vi-vn",
+            "zh-cn",
+            "zh-tw",
+        };
+
         public readonly string[] x86Urls =
         {
             "{0}/Office/Data/v32.cab",
@@ -69,31 +105,10 @@ namespace OfficeC2RDownloader
             archChkLst.ItemsSource = Architectures;
 
             ObservableCollection<CheckListItem> Languages = new ObservableCollection<CheckListItem>();
-            Languages.Add(new CheckListItem() { Value = "ar-sa", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "cs-cz", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "de-de", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "el-gr", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "en-us", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "es-es", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "et-ee", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "fi-fi", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "fr-fr", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "hi-in", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "hu-hu", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "it-it", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "ja-jp", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "ko-kr", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "lt-lt", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "lv-lv", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "nb-no", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "pt-br", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "ro-ro", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "ru-ru", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "th-th", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "tr-tr", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "uk-ua", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "vi-vn", IsChecked = false });
-            Languages.Add(new CheckListItem() { Value = "zh-cn", IsChecked = false });
+            for (int i = 0; i < languages.Length; i++)
+            {
+                Languages.Add(new CheckListItem() { Value = languages[i], IsChecked = false });
+            }
             langChkLst.ItemsSource = Languages;
         }
 
